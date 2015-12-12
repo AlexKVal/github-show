@@ -3,6 +3,19 @@
     <img class="avatar" src="{{model.avatar_url}}&s=240"
     alt="avatar" height="120" width="120">
     <h1>{{model.name}}</h1>
+    <ul class="user-details">
+      {{#if model.blog}}
+        <li>
+          {{fa-icon icon="link"}}
+          <a href="{{model.blog}}" target="_blank">{{model.blog}}</a>
+        </li>
+      {{/if}}
+    </ul>
+    <ul class="user-tabs">
+      <li class="active">
+        <i class="fa fa-book"></i> Repositories <span class="badge">29</span>
+      </li>
+    </ul>
   </div>
 </div>
 {{outlet}}
