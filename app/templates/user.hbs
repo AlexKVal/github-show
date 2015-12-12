@@ -11,6 +11,13 @@
         </li>
       {{/if}}
 
+      {{#if model.location}}
+        <li>
+          {{fa-icon icon="globe"}}
+          {{model.location}}
+        </li>
+      {{/if}}
+
       {{#if model.blog}}
         <li>
           {{fa-icon icon="link"}}
