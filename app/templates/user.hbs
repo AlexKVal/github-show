@@ -44,7 +44,7 @@
       {{#if repo.description}}
         <p class="description">The source for {{repo.description}}</p>
       {{/if}}
-      <p class="updated">Updated {{repo.pushed_at}}</p>
+      <p class="updated">Updated {{moment-from-now repo.pushed_at}}</p>
     </li>
     {{/each}}
   </ul>
