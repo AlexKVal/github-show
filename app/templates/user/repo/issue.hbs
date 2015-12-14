@@ -18,7 +18,7 @@
         commented {{moment-from-now model.created_at}}
       </p>
       <div class="comment-body">
-        {{model.body}}
+        {{markdown-section content=model.body}}
       </div>
     </div>
   </div>
