@@ -8,6 +8,8 @@
     commented {{moment-from-now comment.created_at}}
   </p>
   <div class="comment-body">
-    {{markdown-section content=comment.body}}
+    {{#emoji-tag}}
+      {{markdown-section content=comment.body}}
+    {{/emoji-tag}}
   </div>
 </div>
